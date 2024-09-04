@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입</title>
+</head>
+<body>
+	<h3>회원 정보</h3>
+	<form action="queryTest" method="POST">
+		ID : <input type="text" name="id" /><br /> 
+		비밀번호 : <input 	type="password" name="pwd" /> <br /> 
+		이름 : <input type="text" name='user_name' /><br /> 
+		취미 : <input type="checkbox" value="climb" name="hobby"> 등산 
+			<input type="checkbox" value="exercise" name="hobby"> 운동 
+			<input type="checkbox" value="read" 	name="hobby"> 독서 
+			<input type="checkbox" value="journey" name="hobby"> 여행<br /> 
+		성별 : <input type="radio" value="male" name="gender">남자 
+			<input type="radio" value="female" name="gender">여자<br />
+		종교 : <select name="religion" id="rel">
+			<option value="christ">기독교</option>
+			<option value="catholic">천주교</option>
+			<option value="buddhism">불교</option>
+			<option value="atheism">무교</option>
+		</select><br /> 
+		자기소개 : <br />
+		<textarea rows="10" cols="30" name="introduction"></textarea>
+		<br />
+		<button type="submit">전송</button>
+		<button type="reset">지우기</button>
+	</form>
+</body>
+</html>
